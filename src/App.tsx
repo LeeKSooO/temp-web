@@ -1,13 +1,16 @@
-import "./App.css";
+import AppRouter from "./router";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <>
-      <div>
-        <p>안녕하세용!</p>
-      </div>
-    </>
+    <div>
+      <Navbar />
+      <main className="p-4">
+        <AppRouter />
+      </main>
+    </div>
   );
 }
 
 export default App;
+
